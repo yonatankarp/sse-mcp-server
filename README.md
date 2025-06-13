@@ -80,16 +80,6 @@ Each tool implements the `ToolProvider` interface and auto-registers via `ToolsC
 
 ---
 
-## 🧪 Testing
-
-```bash
-./gradlew test
-```
-
-Includes basic Spring Boot test coverage using JUnit 5.
-
----
-
 ## ⚙️ Configuration
 
 Edit `src/main/resources/application.yaml` to customize port, endpoints, or server name:
