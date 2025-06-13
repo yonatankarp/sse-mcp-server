@@ -43,6 +43,7 @@ docker compose up -d
 
 - Go to the Flowise UI
 - Add a new agent (see screenshot below)
+- Select the model from the list in https://openrouter.ai/models
 
 ![Agent Configuration UI](./docs/flowise-configure-llm.png)
 
@@ -70,10 +71,10 @@ Each tool implements the `ToolProvider` interface and auto-registers via `ToolsC
 
 ### ✅ Built-in Tools:
 
-| Tool        | Description                         | Endpoint     |
-|-------------|-------------------------------------|--------------|
-| `math`      | Perform arithmetic operations       | `/mcp/message?tool=math` |
-| `datetime`  | Get current timestamp and more      | `/mcp/message?tool=datetime` |
+| Tool        | Description                    | Endpoint                     |
+|-------------|--------------------------------|------------------------------|
+| `math`      | Perform arithmetic operations  | `/mcp/message?tool=math`     |
+| `datetime`  | Get current timestamp and more | `/mcp/message?tool=datetime` |
 
 > All tools are exposed via `/manifest.json` for automatic discovery by the agent.
 
